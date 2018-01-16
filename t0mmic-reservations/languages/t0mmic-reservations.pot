@@ -1,0 +1,849 @@
+# Copyright (C) 2018 Michal Tomek
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP T0mmic reservation Pot v1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/t0mmic/trp-restaurant-reservation\n"
+"POT-Creation-Date: 2018-01-14 20:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Michal Tomek <t0mmic@email.cz>\n"
+"Language-Team: Michal Tomek <t0mmic@email.cz>\n"
+"X-Generator: t0mmic translator\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#. Plugin t0mmic-reservations/theme
+
+#: public/partials/t0mmic-reservations-public-display.php:40
+msgid "free space"
+msgstr ""
+
+#: public/partials/t0mmic-reservations-public-display.php:40
+msgid "full"
+msgstr ""
+
+#: public/partials/t0mmic-reservations-public-display.php:51
+#: admin/partials/t0mmic-reservations-admin-display.php:141
+#: admin/partials/t0mmic-reservations-admin-display.php:189
+msgid "Date"
+msgstr ""
+
+#: public/partials/t0mmic-reservations-public-display.php:62
+#: public/partials/t0mmic-reservations-public-display.php:65
+msgid "From time"
+msgstr ""
+
+#: public/partials/t0mmic-reservations-public-display.php:73
+#: public/partials/t0mmic-reservations-public-display.php:76
+msgid "Reserved time"
+msgstr ""
+
+#: public/partials/t0mmic-reservations-public-display.php:89
+#: public/partials/t0mmic-reservations-public-display.php:92
+msgid "Party Size"
+msgstr ""
+
+#: public/partials/t0mmic-reservations-public-display.php:106
+#: admin/partials/t0mmic-reservations-admin-display.php:153
+#: admin/partials/t0mmic-reservations-admin-display.php:201
+msgid "Firstname"
+msgstr ""
+
+#: public/partials/t0mmic-reservations-public-display.php:116
+#: admin/partials/t0mmic-reservations-admin-display.php:156
+#: admin/partials/t0mmic-reservations-admin-display.php:204
+msgid "Surname"
+msgstr ""
+
+#: public/partials/t0mmic-reservations-public-display.php:126
+#: admin/partials/t0mmic-reservations-admin-display.php:159
+#: admin/partials/t0mmic-reservations-admin-display.php:207
+msgid "Phone"
+msgstr ""
+
+#: public/partials/t0mmic-reservations-public-display.php:136
+#: admin/partials/t0mmic-reservations-admin-display.php:162
+#: admin/partials/t0mmic-reservations-admin-display.php:210
+msgid "Email"
+msgstr ""
+
+#: public/partials/t0mmic-reservations-public-display.php:139
+msgid "if you want confirmation by email"
+msgstr ""
+
+#: public/partials/t0mmic-reservations-public-display.php:146
+#: admin/partials/t0mmic-reservations-admin-display.php:171
+#: admin/partials/t0mmic-reservations-admin-display.php:219
+msgid "Notes"
+msgstr ""
+
+#: public/partials/t0mmic-reservations-public-display.php:155
+#: admin/partials/t0mmic-reservations-admin-display.php:534
+msgid "Submit"
+msgstr ""
+
+#: public/partials/t0mmic-reservations-public-display.php:156
+msgid "Reset"
+msgstr ""
+
+#: public/partials/class-t0mmic-reservations-public.php:101
+msgid "Verify by phone!!!"
+msgstr ""
+
+#: public/partials/class-t0mmic-reservations-public.php:103
+msgid "Sorry, you have to reserved a place by phone."
+msgstr ""
+
+#: public/partials/class-t0mmic-reservations-public.php:124
+#: admin/class-t0mmic-reservations-admin.php:42
+msgid "An error occurred"
+msgstr ""
+
+#: public/partials/class-t0mmic-reservations-public.php:133
+msgid "An error occurred. Reservation has been saved, but email was not sent. We will contact you by phone."
+msgstr ""
+
+#: public/partials/class-t0mmic-reservations-public.php:138
+msgid "Someone was faster. Places are no longer available."
+msgstr ""
+
+#: public/partials/class-t0mmic-reservations-public.php:224
+msgid "Closed"
+msgstr ""
+
+#: public/partials/class-t0mmic-reservations-public.php:225
+msgid "Fail. Please try again later."
+msgstr ""
+
+#: public/partials/class-t0mmic-reservations-public.php:226
+msgid "Selected time is not empty. See graph. Green shows free times under the same conditions."
+msgstr ""
+
+#: public/partials/class-t0mmic-reservations-public.php:252
+msgid "TRP Reservation"
+msgstr ""
+
+#: public/partials/class-t0mmic-reservations-public.php:253
+msgid "Reservation form."
+msgstr ""
+
+#: public/partials/class-t0mmic-reservations-public.php:278
+msgid "New title"
+msgstr ""
+
+#: public/partials/class-t0mmic-reservations-public.php:282
+msgid "Title:"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:93
+msgid "Email was sent."
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:95
+msgid "Error! Email was not sent."
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:98
+msgid "Success"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:228
+msgid "Page"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:228
+msgid "of"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:410
+#: admin/partials/t0mmic-reservations-admin-display.php:354
+msgid "Week days"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:411
+#: admin/partials/t0mmic-reservations-admin-display.php:358
+msgid "monday"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:412
+#: admin/partials/t0mmic-reservations-admin-display.php:360
+msgid "tuesday"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:413
+#: admin/partials/t0mmic-reservations-admin-display.php:362
+msgid "wednesday"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:414
+#: admin/partials/t0mmic-reservations-admin-display.php:364
+msgid "thursday"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:415
+#: admin/partials/t0mmic-reservations-admin-display.php:366
+msgid "friday"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:416
+#: admin/partials/t0mmic-reservations-admin-display.php:368
+msgid "saturday"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:417
+#: admin/partials/t0mmic-reservations-admin-display.php:356
+msgid "sunday"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:418
+#: admin/partials/t0mmic-reservations-admin-display.php:370
+msgid "From"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:419
+#: admin/partials/t0mmic-reservations-admin-display.php:373
+msgid "To"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:420
+msgid "Remove this"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:421
+msgid "Day with extra open hours."
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:422
+msgid "Do you want to send a confirmation email?"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:430
+msgid "Reservation"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:430
+#: admin/class-t0mmic-reservations-admin.php:432
+msgid "Reservations"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:431
+#: admin/class-t0mmic-reservations-admin.php:431
+msgid "Info"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:432
+msgid "Reservations overview"
+msgstr ""
+
+#: admin/class-t0mmic-reservations-admin.php:433
+#: admin/class-t0mmic-reservations-admin.php:433
+msgid "Settings"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:33
+msgid "Columns"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:45
+#: admin/partials/t0mmic-reservations-admin-display.php:82
+msgid "Date:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:46
+#: admin/partials/t0mmic-reservations-admin-display.php:83
+msgid "Time from:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:47
+#: admin/partials/t0mmic-reservations-admin-display.php:84
+msgid "Time To:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:48
+#: admin/partials/t0mmic-reservations-admin-display.php:85
+msgid "Party:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:49
+#: admin/partials/t0mmic-reservations-admin-display.php:86
+msgid "Firstname:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:50
+#: admin/partials/t0mmic-reservations-admin-display.php:87
+msgid "Surname:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:51
+#: admin/partials/t0mmic-reservations-admin-display.php:88
+msgid "Phone:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:52
+#: admin/partials/t0mmic-reservations-admin-display.php:89
+msgid "Email:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:53
+#: admin/partials/t0mmic-reservations-admin-display.php:92
+msgid "Condition:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:54
+msgid "Disapproved:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:55
+#: admin/partials/t0mmic-reservations-admin-display.php:90
+msgid "Notes:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:58
+msgid "Pagination"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:59
+msgid "Number of items per page:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:63
+msgid "Hidden rows"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:65
+msgid "Hide disapproved reservations:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:67
+msgid "Apply"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:93
+msgid "Save"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:100
+msgid "Reservations:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:101
+msgid "Add new reservation"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:106
+msgid "Not return results from Date, Time, Party size, Condition and Disapproved."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:106
+msgid "'Whole' table filter..."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:111
+msgid "Select an action for bulk editing"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:113
+msgid "Bulk Actions"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:114
+msgid "Disapproved"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:115
+msgid "Approve"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:116
+msgid "Delete"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:122
+msgid "From Date:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:123
+msgid "View from selected date."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:124
+msgid "Time occupancy:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:125
+msgid "Searches booking time just in one selected day."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:126
+msgid "Clear filter:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:127
+msgid "Clear filter"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:137
+#: admin/partials/t0mmic-reservations-admin-display.php:185
+msgid "Select all"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:144
+#: admin/partials/t0mmic-reservations-admin-display.php:192
+msgid "Time from"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:147
+#: admin/partials/t0mmic-reservations-admin-display.php:195
+msgid "Time to"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:165
+#: admin/partials/t0mmic-reservations-admin-display.php:213
+msgid "Condition"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:168
+#: admin/partials/t0mmic-reservations-admin-display.php:216
+msgid "Disapproved"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:198
+msgid "Party size"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:236
+msgid "Restaurant reservations - settings"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:244
+msgid "general"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:245
+msgid "weeks"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:246
+msgid "datepicker"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:247
+msgid "texts"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:250
+msgid "Page heading"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:253
+#: admin/partials/t0mmic-reservations-admin-display.php:254
+msgid "Theme for datepicker"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:282
+msgid "Front end form color"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:283
+msgid "Front end color of the plugin."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:284
+msgid "black"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:285
+msgid "white"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:288
+msgid "Email for sending the reservation form"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:289
+msgid "Reservation form will be sent to this email."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:291
+msgid "Date format"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:292
+msgid "Select the date format"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:298
+msgid "Time format"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:299
+msgid "Select the time format"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:304
+#: admin/partials/t0mmic-reservations-admin-display.php:305
+msgid "First day of the week."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:306
+msgid "Sunday"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:307
+msgid "Monday"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:310
+msgid "How soon can be make reservation"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:311
+msgid "Distance from the current time, when it´s possible to make a reservation first."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:312
+msgid "the next day"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:313
+msgid "5 minutes in advance"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:314
+msgid "10 minutes in advance"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:315
+msgid "20 minutes in advance"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:316
+msgid "30 minutes in advance"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:317
+msgid "45 minutes in advance"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:317
+msgid "1 hour in advance"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:319
+msgid "2 hours in advance"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:320
+msgid "4 hours in advance""
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:323
+msgid "Set default 'Condition', (yes=approved, no=pending)"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:324
+msgid "If email is required, it should be set 'no'."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:325
+#: admin/partials/t0mmic-reservations-admin-display.php:332
+msgid "no"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:326
+#: admin/partials/t0mmic-reservations-admin-display.php:331
+msgid "yes"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:329
+msgid "Email is required? Do you want to confirm reservation by email?"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:330
+msgid "They will must to fill an email to the form."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:335
+msgid "List of comma separated closed date (e.g. the New Year)."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:336
+msgid "Enter dates separated by ',' in the format 'yyyy-mm-dd' e.g. '2017-12-25, 2017-12-26'"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:338
+msgid "List of comma separated blocked email, or phone"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:339
+msgid "Enter emails addresses or phones separated by ','. Reservation is after this entered in the table with a note that it needs to be verified."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:341
+msgid "Enable blocking"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:343
+msgid "If checked, set reservation for blocked emails and phones only by phone."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:347
+msgid "Times and days when it is possible to make a reservation"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:375
+msgid "Add new week"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:377
+msgid "Day with extra open hours"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:378
+msgid "Fill, if the opening hours are changed on given day. Days of the week, do not fill."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:379
+msgid "Remove week"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:385
+msgid "All reservations capacity"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:386
+msgid "Reservation capacity at the same time"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:399
+#: admin/partials/t0mmic-reservations-admin-display.php:400
+msgid "Max. party size"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:413
+msgid "Reservation in advance"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:414
+msgid "How many days in advance can be make a reservation"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:427
+msgid "Minimal time for one reservation"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:428
+msgid "Maximal time for one reservation."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:429
+#: admin/partials/t0mmic-reservations-admin-display.php:430
+#: admin/partials/t0mmic-reservations-admin-display.php:432
+#: admin/partials/t0mmic-reservations-admin-display.php:439
+#: admin/partials/t0mmic-reservations-admin-display.php:441
+#: admin/partials/t0mmic-reservations-admin-display.php:443
+msgid "min."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:431
+#: admin/partials/t0mmic-reservations-admin-display.php:432
+#: admin/partials/t0mmic-reservations-admin-display.php:438
+#: admin/partials/t0mmic-reservations-admin-display.php:439
+msgid "hour"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:433
+#: admin/partials/t0mmic-reservations-admin-display.php:440
+#: admin/partials/t0mmic-reservations-admin-display.php:441
+#: admin/partials/t0mmic-reservations-admin-display.php:442
+#: admin/partials/t0mmic-reservations-admin-display.php:443
+#: admin/partials/t0mmic-reservations-admin-display.php:444
+#: admin/partials/t0mmic-reservations-admin-display.php:445
+msgid "hours"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:436
+#: admin/partials/t0mmic-reservations-admin-display.php:437
+msgid "Maximal time for one reservation"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:448
+msgid "Clock interval for reservation"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:449
+msgid "Choosing the interval between the times available for reservation."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:461
+msgid "Use these variables in the body of the email as a replacements for words that are loaded automatically from form or table."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:463
+msgid "Reserved date"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:465
+msgid "Reserved from time"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:467
+msgid "Reserved to time"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:469
+msgid "Reserved party size"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:471
+msgid "Note"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:473
+msgid "IP from which the request came (the reservation form)"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:475
+msgid "First name of the user who made the reservation"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:477
+msgid "Surname of the user who made the reservation"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:481
+msgid "Email text, whitch is sent from reservation front end form."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:483
+#: admin/partials/t0mmic-reservations-admin-display.php:512
+msgid "Email subject"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:486
+msgid "Result text, if default 'Condition' is set to 'yes' and result is OK."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:489
+msgid "Result text, if default 'Condition' is set to 'no' and result is OK."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:510
+msgid "Text of the approval email that is sent from the reservations overview."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:515
+msgid "Sender name of confirmation email"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:542
+msgid "TRP Reservations description:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:543
+msgid "Allows online restaurant reservation, send e-mails or search free seats and automatically booked."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:545
+msgid "When fully occupied, it offers alternative reservation options."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:546
+msgid "Searches based on custom specified days and times, restrict booking times."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:547
+msgid "Opening hours for holidays and other days. Closed days. All block or modify automatically."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:548
+msgid "Allows edit bookings from the admin panel."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:549
+msgid "Allows block users based on email or phone."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:550
+msgid "Send email to customers about their booking."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:551
+msgid "Also can be used as a widget."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:553
+msgid "If you like my work, you can support me on"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:555
+msgid "Instruction:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:556
+msgid "Reservation table:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:558
+msgid "Reservations table can edit if you click in the table cell and edit the text. The change is saved immediately. Only some cells can be updated."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:559
+msgid "After the status update to approved, you can send confirmation email, when the user has filled in."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:560
+msgid "'Whole' table filter find data by firstname, surname, phone, email and note."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:561
+msgid "If date is selected, data will loaded from selected day."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:562
+msgid "If you insert time to input, all selected data contains the selected day and the selected time is between 'time from' and 'time to'"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:563
+msgid "In the drop-down bar, you can set visible table columns, the number of rows, and you can also hide disapproved reservations."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:564
+msgid "For bulk actions, use the box at the beginning of the reservation table. You can delete rows from the database, approve or disapprove reservations."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:565
+msgid "With button 'Add new reservation', you can add new reservation from admin interface."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:567
+msgid "Settings:"
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:569
+msgid "On the general and datepicker bookmark you can set all the necessary parameters to search for free seats to book."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:570
+msgid "There you will find the option to set the closed days, or block some emails or phone."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:571
+msgid "Bookmark weeks serves to set the opening hours on different days of the week, or to set a special opening time on a selected day."
+msgstr ""
+
+#: admin/partials/t0mmic-reservations-admin-display.php:572
+msgid "Bookmark texts serves to create texts for send emails. Beware, first try to send email yourself, not all html characters are supported."
+msgstr ""

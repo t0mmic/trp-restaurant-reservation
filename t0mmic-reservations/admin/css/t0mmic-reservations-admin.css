@@ -1,0 +1,367 @@
+/* LAYOUT */
+#screen-meta{
+  display:none;
+}
+.trp-h3{
+  font-weight:400;
+}
+.trp-control-label {
+  display: inline-block;
+  width: 40%;
+  line-height:33px;
+  padding: 0 20px 0 13px;
+  height:33px;
+  margin:5px 0;
+  font-weight:bold;
+}
+.trp-control-label-1 {
+  display: inline-block;
+  width: 100%;
+  line-height:33px;
+  padding: 0 20px 0 13px;
+  height:33px;
+  margin:5px 0;
+  font-size:16px;
+  font-weight:bold;
+  color:#555;
+}
+.trp-div {
+  padding: 10px;
+  border-radius: 4px;
+  border:1px solid #dddddd;
+}
+.trp-select{
+  width:30%;
+  height:35px !important;
+  border-radius: 4px;
+  margin:5px 0;
+}
+.trp-form-control{
+	width:30%;
+  height:35px;
+  border-radius: 4px;
+  margin:5px 0;
+}
+.trp-form-control-long{
+  width:56%;
+  height:35px;
+  border-radius: 4px;
+  margin:5px 0;
+}
+.trp-form-control-txt{
+  width:30%;
+  border-radius: 4px;
+}
+.trp-checkbox{
+  border-radius: 4px;
+}
+.trp-btn{
+  margin-top:20px !important;
+  margin-left:14px !important;
+}
+.buttonAdd, .buttonRem{
+  margin-bottom:4px;
+  margin-left:20%;
+  border-radius: 4px;
+  border:1px solid #cccccc;
+}
+.trp-row{
+  border-style:solid;
+  border-width:thin;
+  border-color: #ddd;
+  border-radius: 4px;
+  margin-bottom:1rem;
+}
+.button-hide{
+  display:none;
+}
+.trp-var{
+  color:blue;
+  width:20%;
+  float:left;
+  height:33px;
+  line-height:33px;
+  margin:5px 15px;
+  font-weight:bold;
+}
+
+/* TABLE */
+.trp-label{
+  vertical-align: baseline !important;
+}
+.trp-filter{
+  padding:0;
+  margin-left:2px;
+}
+#trp-search, #trp-dateFilter, #trp-timeFilter {
+  background-color: #f6f6f6;
+  border:none;
+  border-top: 1px solid #ddd;
+  border-radius:0;
+  margin:0;
+  line-height:20px;
+}
+.trp-refresh {
+  padding:0 0 0 3px;
+}
+.trp-tab-style {
+	background-color: #f6f6f6;
+  /*padding-right:15px;*/
+  min-width:100%;
+  max-width:100%;
+}
+.trp-th, #add_user {
+	background-color: #706c79;
+  border-radius: 4px 4px 0 0;
+	color:#fff;
+	font-weight: 400;
+  padding: 7px 5px;
+	cursor: pointer;
+}
+.trp-center{
+  text-align:center !important;
+}
+.trp-tr > td{
+  border:1px solid #ddd;
+  padding: 2px 5px;
+  border-radius: 0;
+}
+#message{
+  float:right;
+  line-height:27px;
+  width:200px;
+  margin-left:20px;
+  text-decoration:bold;
+  font-size:16px;
+}
+
+/* TABLE PAGINATION */
+#trp-paginate{
+  padding: 4px 0;
+  margin:0 2px;
+  border-radius: 4px 4px 0 0;
+}
+.trp-paginate{
+  padding-right: 15px;
+  font-size:14px;
+}
+.prev, .page-numbers, .next{
+  text-decoration: none;
+  font-size:14px;
+}
+
+/* MODAL WINDOW FORM */
+.trp-modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.trp-modal-content{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.trp-x{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.trp-brdr{
+  border:none !important;
+  box-shadow:none !important;
+  margin:5px;
+  padding:5px;
+}
+.trp-input-form{
+  margin:10px;
+  padding:3px;
+}
+.trp-x:hover, .trp-x:focus{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.trp-input{
+  width:162px;
+  height:27px;
+  border-radius:4px;
+  margin:5px;
+  padding:5px;
+}
+.trp-input-checkbox{
+  border-radius:4px;
+  margin:5px !important;
+  padding:5px;
+}
+
+/* TABS FORM SETTINGS PAGINATION */
+/*! jQuery UI - v1.12.1 - 2018-01-08
+* http://jqueryui.com
+* Includes: core.css, tabs.css
+* Copyright jQuery Foundation and other contributors; Licensed MIT */
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+	clear: both;
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0); /* support: IE8 */
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+	pointer-events: none;
+}
+
+
+/* Icons
+----------------------------------*/
+.ui-icon {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -.25em;
+	position: relative;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+.ui-widget-icon-block {
+	left: 50%;
+	margin-left: -8px;
+	display: block;
+}
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.ui-tabs {
+	position: relative;
+	padding: .2em;
+}
+.ui-tabs .ui-tabs-nav {
+	margin: 0;
+	padding: .2em .2em 0;
+}
+.ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 0;
+	margin: 1px .2em 0 0;
+	border-bottom-width: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 1px solid #c5c5c5;
+    background: #f6f6f6;
+    font-weight: normal;
+    color: #454545;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	float: left;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+  z-index: 999;
+  background: #f1f1f1;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+  position:relative;
+	cursor: text;
+}
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+	cursor: pointer;
+}
+.ui-tabs .ui-tabs-panel {
+  position:relative;
+	display: block;
+	border-width: 0;
+	padding: 1em 1.4em;
+	background: none;
+  border-top:1px solid #dddddd;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 3px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 3px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 4px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 4px;
+}
+.ui-widget-content {
+    border: 1px solid #dddddd;
+    color: #333333;
+}

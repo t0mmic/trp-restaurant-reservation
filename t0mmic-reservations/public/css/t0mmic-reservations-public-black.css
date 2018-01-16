@@ -1,0 +1,121 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ /* hides the name for all pages */
+ /*.entry-header{
+   display:none;
+ }*/
+@font-face {
+    font-family: UbuntuMono-R;
+    src: url("UbuntuMono-R.ttf");
+}
+.trp-reservation {
+  background:#333;
+ 	/*background-image: url("../image/img.png");*/
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+  background-position: left top;
+  padding:10px;
+  border-radius:5px;
+}
+.trp-error{
+  padding-bottom:15px;
+  font-size:18px;
+  color:#b70307;
+  text-shadow: 1px 1px #b7b303;
+}
+.trp-h1{
+  text-align:center;
+}
+#trp-datepicker, .trp-select{
+  font-size:18px;
+  font-family: UbuntuMono-R;
+  height:50px;
+  width:100%;
+  padding:0.7em;
+  background:#333 !important;
+  color:#eee !important;
+  margin-bottom:10px;
+  border-radius:3px;
+  border-width:0.5px;
+  border-style: solid;
+}
+#timepickerFrom{
+  font-size:18px;
+  font-family: UbuntuMono-R;
+}
+.trp-control-label{
+  padding-left:10px;
+  font-weight: 500;
+  color:#eee !important;
+}
+.trp-form-control{
+  background:#333 !important;
+  color:#eee !important;
+}
+.trp-form-control, .trp-select{
+  font-size:18px;
+  font-family: UbuntuMono-R;
+  margin-bottom:10px;
+}
+#trp-hide{
+  display:none;
+}
+
+/* graph */
+.trp-graph-hide{
+  display:none;
+}
+#trp-timeGraph{
+  position: relative;
+  width: 100%;
+  margin: 20px auto;
+  text-align:center;
+  font: 14px 'Trebuchet MS', sans serif;
+}
+.trp-left{
+  float:left;
+  width:100%;
+}
+#trp-graph{
+  position:relative;
+  height:50px;
+  border-left:2px solid #000000;
+  border-bottom: 2px solid #000000;
+  width:100%;
+  margin-top:20px;
+}
+.trp-scale{
+  position:absolute;
+  left:0;
+  height: 1px;
+  background-color:gray;
+  width: 100%;
+}
+.trp-scale div{
+  float:left;
+  margin: -8px 0 0 -80px;
+  color:#fff;
+}
+.trp-column{
+  position:absolute;
+  bottom: 0;
+  background-color: #003366;
+  margin-left:1%;
+}
+.trp-column div{
+  margin-top:-23px;
+}
+.trp-time{
+  float:left;
+  font-size:9px;
+  color:#eee !important;
+}
+#trp-labels{
+  float:left;
+  width:100%;
+  margin: 5px auto;
+  text-align:center;
+  color:#eee !important;
+}
