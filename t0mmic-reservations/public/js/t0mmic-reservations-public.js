@@ -216,7 +216,7 @@
 
 					$.ajax({
 		 				type: 'POST',
-		 				url: ajax.url,
+		 				url: phpSettings.url,
 						dataType: 'json',
 		 				data: jsonData,
 		 				success: function(data, textStatus, XMLHttpRequest){
@@ -274,17 +274,22 @@
 
 		// if a new reservation is set, calls the function t0mmic_reservation_table
 		$(".formRes").on('click', function(){
-			var data = $('#resForm').serialize();
+			var sdata = $('#resForm').serializeArray();
+			var data = {};
+			data.action = 't0mmic_reservation_table';
+			$.each(sdata, function(i, v){
+	        data[v.name] = v.value;
+	    });
 			$.ajax({
 				type: 'POST',
-				url: ajax.url,
-				data: 'action=t0mmic_reservation_table&' + data,
+				url: phpSettings.url,
+				data: data,
 				success: function(data, textStatus, XMLHttpRequest){
 					alert(data);
 				},
 				error: function(MLHttpRequest, textStatus){
 					if (MLHttpRequest.status===0){
-						alert('success');
+						alert('OK');
 					} else {
 						alert(textStatus);
 					}
