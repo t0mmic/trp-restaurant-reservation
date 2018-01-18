@@ -111,9 +111,9 @@ if ( ! defined( 'WPINC' ) ) {
 					<label for="bulk-action-selector-top" class="screen-reader-text"><?php echo __("Select an action for bulk editing"); ?></label>
 						<select name="action" id="bulk-action-selector-top">
 						  <option value="-1"><?php echo __("Bulk Actions"); ?></option>
-							<option value="disapprove"><?php echo __("Disapproved"); ?></option>
-							<option value="status"><?php echo __("Approve"); ?></option>
-							<option value="delete"><?php echo __("Delete"); ?></option>
+							<option value="disapprove"><?php echo __("Disapproved", "t0mmic-reservations"); ?></option>
+							<option value="status"><?php echo __("Approve", "t0mmic-reservations"); ?></option>
+							<option value="delete"><?php echo __("Delete", "t0mmic-reservations"); ?></option>
 						</select>
 						<input id="trp_bulk_action" type="submit" class="button action" value="Použít">
 				</div>
@@ -301,7 +301,7 @@ if ( ! defined( 'WPINC' ) ) {
 			        	<option <?php if ($data['timeFormatRes']=='12h') echo "selected";?> value="12h">12h</option>
 				      </select>
 							<br/>
-							<label for="firstDayRes" class="trp-control-label"><?php echo __("First day of the week", "t0mmic-reservations"); ?></label>
+							<label for="firstDayRes" class="trp-control-label"><?php echo __("First day of the week.", "t0mmic-reservations"); ?></label>
 							<select name="firstDayRes" id="firstDayRes" title="<?php echo __("First day of the week.", "t0mmic-reservations"); ?>" size="1" class="trp-select">
 								<option <?php if ($data['firstDayRes']==0)    echo "selected";?> value="0"><?php echo __("Sunday", "t0mmic-reservations"); ?></option>
 								<option <?php if ($data['firstDayRes']==1)    echo "selected";?> value="1"><?php echo __("Monday", "t0mmic-reservations"); ?></option>
@@ -552,8 +552,8 @@ if ( ! defined( 'WPINC' ) ) {
   </ul>
   <p style="font-size:18px;font-weight:bold"><?php echo __("If you like my work, you can support me on", "t0mmic-reservations"); ?> <a href='https://paypal.me/t0mmic'>PayPal</a></p>
 
-  <h2><?php echo __("Instruction:"); ?></h2>
-  <h3><?php echo __("Reservation table:"); ?></h3>
+  <h2><?php echo __("Instruction:", "t0mmic-reservations"); ?></h2>
+  <h3><?php echo __("Reservation table:", "t0mmic-reservations"); ?></h3>
 
   <p style="font-size:15px"><?php echo __("Reservations table can edit if you click in the table cell and edit the text. The change is saved immediately. Only some cells can be updated.", "t0mmic-reservations") ?></p>
   <p style="font-size:15px"><?php echo __("After the status update to approved, you can send confirmation email, when the user has filled in.", "t0mmic-reservations") ?></p>
@@ -564,7 +564,7 @@ if ( ! defined( 'WPINC' ) ) {
   <p style="font-size:15px"><?php echo __("For bulk actions, use the box at the beginning of the reservation table. You can delete rows from the database, approve or disapprove reservations.", "t0mmic-reservations") ?></p>
   <p style="font-size:15px"><?php echo __("With button 'Add new reservation', you can add new reservation from admin interface.", "t0mmic-reservations") ?></p>
 
-  <h3 class="trp-h3"><?php echo __("Settings:"); ?></h3>
+  <h3 class="trp-h3"><?php echo __("Settings:", "t0mmic-reservations"); ?></h3>
 
   <p style="font-size:15px"><?php echo __("On the general and datepicker bookmark you can set all the necessary parameters to search for free seats to book.", "t0mmic-reservations") ?></p>
   <p style="font-size:15px"><?php echo __("There you will find the option to set the closed days, or block some emails or phone.", "t0mmic-reservations") ?></p>
