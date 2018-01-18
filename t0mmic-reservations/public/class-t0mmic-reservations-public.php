@@ -46,6 +46,16 @@
 
        if (($data['maxAllRes'] - $result['places'] - $FormPlaces) >= 0){
 
+         if ($data['arrayBlockEmail'] != ""){
+           if (((in_array($FormEmail, $arrayBlockEmail)) || (in_array($FormPhone, $arrayBlockEmail))) && ($data['blockEmail'] == 0)){
+             $FormStatus = 0;
+             $FormText =  __("Verify by phone!!!", "t0mmic-reservations") . ' ' . $FormText;
+           } else if (((in_array($FormEmail, $arrayBlockEmail)) || (in_array($FormPhone, $arrayBlockEmail))) && ($data['blockEmail'] == 1)){
+             echo __("Sorry, you have to reserved a place by phone.", "t0mmic-reservations");
+             goto next;
+           }
+         }
+
          // send email
          if(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
            $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
@@ -89,21 +99,15 @@
          $name = imap_8bit($FormFirstname." ".$FormSurname);
          $name = "=?utf-8?Q?".$name."?=";
 
-         $headers  = "From: ".$name." <".$FormEmail.">\r\n";
-         $headers .= "Reply-To: ".$name." <".$FormEmail.">\r\n";
-         $headers .= "Cc: ".$name." <".$FormEmail.">\r\n";
+         if($FormEmail == ""){
+           $headers  = "From: ".$name." <".$data['toEmail'].">\r\n";
+         } else {
+           $headers  = "From: ".$name." <".$FormEmail.">\r\n";
+           $headers .= "Reply-To: ".$name." <".$FormEmail.">\r\n";
+           $headers .= "Cc: ".$name." <".$FormEmail.">\r\n";
+         }
          $headers .= "Content-type: text/html; charset=utf-8\r\n";
          $headers .= 'X-Mailer: PHP/' . phpversion() . "\r\n";
-
-         if ($data['arrayBlockEmail'] != ""){
-           if (((in_array($FormEmail, $arrayBlockEmail)) || (in_array($FormPhone, $arrayBlockEmail))) && ($data['blockEmail'] == 0)){
-             $FormStatus = 0;
-             $FormText =  __("Verify by phone!!!", "t0mmic-reservations") . ' ' . $FormText;
-           } else if (((in_array($FormEmail, $arrayBlockEmail)) || (in_array($FormPhone, $arrayBlockEmail))) && ($data['blockEmail'] == 1)){
-             ob_clean (); echo __("Sorry, you have to reserved a place by phone.", "t0mmic-reservations"); wp_die();
-             goto next;
-           }
-         }
 
          // save to MYSQL
          $result = $wpdb->insert(
@@ -121,23 +125,23 @@
                  )
          );
          if ( false === $result ) {
-           ob_clean (); echo __("An error occurred", "t0mmic-reservations"); wp_die();
+           echo __("An error occurred", "t0mmic-reservations");
          } else {
            if (wp_mail($data['toEmail'], $data['mail_subject_first'] ." ". $FormEmail, $message, $headers)){
              if ($FormStatus == 1){
-               ob_clean (); echo $data['mail_confirm_text']; wp_die();
+               echo $data['mail_confirm_text'];
              } else {
-               ob_clean (); echo $data['mail_saved_text']; wp_die();
+               echo $data['mail_saved_text'];
              }
            } else {
-             ob_clean (); echo __("An error occurred. Reservation has been saved, but email was not sent. We will contact you by phone.", "t0mmic-reservations"); wp_die();
+             echo __("An error occurred. Reservation has been saved, but email was not sent.", "t0mmic-reservations");
            }
          }
 
        } else {
-         ob_clean (); echo __("Someone was faster. Places are no longer available.", "t0mmic-reservations"); wp_die();
+         echo __("We're sorry, but someone made a booking faster.", "t0mmic-reservations");
        } // end if control
-       next:
+       next:  wp_die();
  } if (is_admin()){
  add_action('wp_ajax_nopriv_t0mmic_reservation_table', 't0mmic_reservation_table');
  add_action('wp_ajax_t0mmic_reservation_table', 't0mmic_reservation_table');}
@@ -196,7 +200,7 @@ class T0mmic_Reservations_Public {
    * @since    1.0.0
    */
   public function enqueue_scripts() {
-    wp_enqueue_script('t0mmic-reservations', TRP_URL . 'public/js/t0mmic-reservations-public.js', array('jquery'), $this->version, false);
+    wp_enqueue_script('t0mmic-reservations', TRP_URL . 'public/js/t0mmic-reservations-public.js', array('jquery','json2'), $this->version, false);
     add_action('wp_enqueue_scripts', 't0mmic_reservation');
 
     $data = get_option('t0mmic_settings');
@@ -222,10 +226,10 @@ class T0mmic_Reservations_Public {
         'firstDayRes'     => $data['firstDayRes'],
         'closed'          => __('Closed','t0mmic-reservations'),
         'fail'            => __("Fail. Please try again later.", "t0mmic-reservations"),
-        'occupied'        => __("Selected time is not empty. See graph. Green shows free times under the same conditions.", "t0mmic-reservations")
+        'occupied'        => __("Selected time is not empty. See graph. Green shows free times under the same conditions.", "t0mmic-reservations"),
+        'url'             => TRP_ADMIN_URL . 'admin-ajax.php'
     );
     wp_localize_script('t0mmic-reservations', 'phpSettings', $phpSettings);
-    wp_localize_script('t0mmic-reservations', 'ajax', array('url' => TRP_ADMIN_URL . 'admin-ajax.php'));
   }
 
 
@@ -340,6 +344,6 @@ function t0mmic_reservation_ajax(){
     }
     wp_die();
 
-}
+} if (is_admin()){
 add_action('wp_ajax_nopriv_t0mmic_reservation_ajax', 't0mmic_reservation_ajax');
-add_action('wp_ajax_t0mmic_reservation_ajax', 't0mmic_reservation_ajax');
+add_action('wp_ajax_t0mmic_reservation_ajax', 't0mmic_reservation_ajax');}
