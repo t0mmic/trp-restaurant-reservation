@@ -80,12 +80,12 @@ if ( ! defined( 'WPINC' ) ) {
 		        );
 		        $message .= '</td></tr></tbody></table></body></html>';
 
-		        $name = imap_8bit($data['mail_sender_name']);
-		        $name = "=?utf-8?Q?".$name."?=";
+		        $name = $data['mail_sender_name'];
 
-		        $headers  = "From: ".$name." <".$data['toEmail'].">\r\n";
-		        $headers .= "Reply-To: ".$name." <".$data['toEmail'].">\r\n";
-		        $headers .= "Cc: ".$name." <".$data['toEmail'].">\r\n";
+
+		        $headers  = "From: \"".$name."\" <".$data['toEmail'].">\r\n";
+		        $headers .= "Reply-To: \"".$name."\" <".$data['toEmail'].">\r\n";
+		        $headers .= "Cc: \"".$name."\" <".$data['toEmail'].">\r\n";
 		        $headers .= "Content-type: text/html; charset=utf-8\r\n";
 		        $headers .= 'X-Mailer: PHP/' . phpversion() . "\r\n";
 
