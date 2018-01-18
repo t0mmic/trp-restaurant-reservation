@@ -201,7 +201,7 @@ class T0mmic_Reservations_Public {
    */
   public function enqueue_scripts() {
     wp_enqueue_script('t0mmic-reservations', TRP_URL . 'public/js/t0mmic-reservations-public.js', array('jquery','json2'), $this->version, false);
-    add_action('wp_enqueue_scripts', 't0mmic_reservation');
+
 
     $data = get_option('t0mmic_settings');
     $phpSettings = array(
@@ -241,7 +241,7 @@ class T0mmic_Reservations_Public {
 	public function enqueue_styles() {
     $data = get_option('t0mmic_settings');
 		wp_enqueue_style( 't0mmic-reservations-public', TRP_URL . 'public/css/t0mmic-reservations-public-'.$data['cssRes'].'.css', array(), $this->version, 'all' );
-    add_action( 'wp_enqueue_style', 't0mmic_reservation' );
+
 	}
 
 }
