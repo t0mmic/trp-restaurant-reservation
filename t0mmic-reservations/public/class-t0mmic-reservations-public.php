@@ -96,15 +96,15 @@
          );
          $message .= '</td></tr></tbody></table></body></html>';
 
-         $name = imap_8bit($FormFirstname." ".$FormSurname);
-         $name = "=?utf-8?Q?".$name."?=";
+
+         $name = $FormFirstname." ".$FormSurname;
 
          if($FormEmail == ""){
-           $headers  = "From: ".$name." <".$data['toEmail'].">\r\n";
+           $headers  = "From: \"".$name."\" <".$data['toEmail'].">\r\n";
          } else {
-           $headers  = "From: ".$name." <".$FormEmail.">\r\n";
-           $headers .= "Reply-To: ".$name." <".$FormEmail.">\r\n";
-           $headers .= "Cc: ".$name." <".$FormEmail.">\r\n";
+           $headers  = "From: \"".$name."\" <".$FormEmail.">\r\n";
+           $headers .= "Reply-To: \"".$name."\" <".$FormEmail.">\r\n";
+           $headers .= "Cc: \"".$name."\" <".$FormEmail.">\r\n";
          }
          $headers .= "Content-type: text/html; charset=utf-8\r\n";
          $headers .= 'X-Mailer: PHP/' . phpversion() . "\r\n";
