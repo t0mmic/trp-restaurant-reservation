@@ -8,7 +8,7 @@
 .trp-control-label {
   display: inline-block;
   width: 40%;
-  line-height:33px;
+  /*line-height:33px;*/
   padding: 0 20px 0 13px;
   height:33px;
   margin:5px 0;
