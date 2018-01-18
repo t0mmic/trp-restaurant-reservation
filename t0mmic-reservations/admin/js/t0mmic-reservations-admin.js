@@ -60,7 +60,7 @@
 				jsonData.value = value;
 				$.ajax({
 					type: 'POST',
-					url: ajax.url,
+					url: phpSettings.url,
 					dataType: 'json',
 					data: jsonData,
 					success: function(data, textStatus, XMLHttpRequest){
@@ -87,7 +87,7 @@
 				if(val != '-1'){
 					$.ajax({
 						type: 'POST',
-						url: ajax.url,
+						url: phpSettings.url,
 						dataType: 'json',
 						data: {action:"trp_bulk_action",value:val,post:post},
 						success: function(data, textStatus, XMLHttpRequest){
@@ -108,7 +108,7 @@
 				var data = $(this).serialize();
 				$.ajax({
 					type: "POST",
-					url: ajax.url,
+					url: phpSettings.url,
 					data: 'action=trp_update_reservation&' + data,
 					success: function(data, textStatus, XMLHttpRequest){
 						message.show().text(textStatus);
@@ -130,7 +130,7 @@
 				if (e.target.id == 'adv-settings'){val = 'table'}
 				$.ajax({
 					type: "POST",
-					url: ajax.url,
+					url: phpSettings.url,
 					data: 'action=trp_option&switch='+val+'&' + data,
 					success: function(data, textStatus, XMLHttpRequest){
 						message.show().text(textStatus);
