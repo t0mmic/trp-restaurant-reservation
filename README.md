@@ -18,7 +18,7 @@ Send email to customers about their booking.
 Also can be used as a widget. 
 Translation to English and Czech
 
-Front-end form http://test.potisktrik.cz/
+Front-end form http://test.potisktrik.cz/ - sending email is not allowed :)
 
 Needed Wordpress roles: Contributor - list and edit reservations Editor - list and edit reservations, edit settings
 
