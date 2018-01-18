@@ -1,7 +1,7 @@
 # trp-restaurant-reservation
 Wordpress - fully automated booking plugin for restauration
 
-Tested on WordPress 4.9.1
+Tested on WordPress 4.9.1 and above
 
 Description:
 
