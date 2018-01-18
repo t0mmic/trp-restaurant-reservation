@@ -99,8 +99,8 @@ if ( ! defined( 'WPINC' ) ) {
 					}
 			}
 			wp_die();
-  }
-	add_action('wp_ajax_trp_update_table', 'trp_update_table');
+  } if (is_admin()){
+	add_action('wp_ajax_trp_update_table', 'trp_update_table');}
 
 
   // update options in DB
@@ -174,8 +174,8 @@ if ( ! defined( 'WPINC' ) ) {
 			echo $result;
 
 			wp_die();
-  }
-	add_action('wp_ajax_trp_option', 'trp_option');
+  } if (is_admin()){
+	add_action('wp_ajax_trp_option', 'trp_option');}
 
   // pagination, filers and data for table reservation
   function trp_table(){
@@ -303,8 +303,8 @@ if ( ! defined( 'WPINC' ) ) {
 			echo json_encode($result);
 
       wp_die();
-  }
-	add_action('wp_ajax_trp_update_reservation', 'trp_update_reservation');
+  } if (is_admin()){
+	add_action('wp_ajax_trp_update_reservation', 'trp_update_reservation');}
 
 
 	// bulk action on table reservation page (edit and delete multiple row)
@@ -336,8 +336,8 @@ if ( ! defined( 'WPINC' ) ) {
 			echo json_encode($result);
 
 			wp_die();
-	}
-	add_action('wp_ajax_trp_bulk_action', 'trp_bulk_action');
+	} if (is_admin()){
+	add_action('wp_ajax_trp_bulk_action', 'trp_bulk_action');}
 
 
 /**
@@ -402,7 +402,7 @@ class T0mmic_Reservations_Admin {
 	public function enqueue_scripts() {
 		wp_enqueue_script('jquery-ui-tabs');
 		wp_enqueue_script('jquery-ui-widget');
-		wp_enqueue_script( $this->plugin_name, TRP_URL . 'admin/js/t0mmic-reservations-admin.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, TRP_URL . 'admin/js/t0mmic-reservations-admin.js', array( 'jquery','json2' ), $this->version, false );
 		add_action( 'wp_enqueue_scripts', 't0mmic_reservation' );
 
 		$data = get_option('t0mmic_settings');
@@ -419,10 +419,10 @@ class T0mmic_Reservations_Admin {
 		  'to'              => __('To', 't0mmic-reservations'),
 		  'removeThis'      => __('Remove this', 't0mmic-reservations'),
 			'daysett'      		=> __('Day with extra open hours.', 't0mmic-reservations'),
-			'sendEmail'      	=> __('Do you want to send a confirmation email?', 't0mmic-reservations')
+			'sendEmail'      	=> __('Do you want to send a confirmation email?', 't0mmic-reservations'),
+			'url' 						=> TRP_ADMIN_URL . 'admin-ajax.php'
 		);
 		wp_localize_script('t0mmic-reservations', 'phpSettings', $phpSettings );
-		wp_localize_script('t0mmic-reservations', 'ajax', array('url' => TRP_ADMIN_URL . 'admin-ajax.php'));
 	}
 
   // Create the Plugin Name menu page with add_menu_page();
