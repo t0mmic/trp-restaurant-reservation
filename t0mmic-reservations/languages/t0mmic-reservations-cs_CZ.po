@@ -38,12 +38,12 @@ msgstr "Datum"
 #: public/partials/t0mmic-reservations-public-display.php:62
 #: public/partials/t0mmic-reservations-public-display.php:65
 msgid "From time"
-msgstr "Od kdy"
+msgstr "Od"
 
 #: public/partials/t0mmic-reservations-public-display.php:73
 #: public/partials/t0mmic-reservations-public-display.php:76
 msgid "Reserved time"
-msgstr "Rezervovaný čas"
+msgstr "Rezervovat na"
 
 #: public/partials/t0mmic-reservations-public-display.php:89
 #: public/partials/t0mmic-reservations-public-display.php:92
@@ -93,52 +93,52 @@ msgstr "Odeslat"
 msgid "Reset"
 msgstr "Resetovat"
 
-#: public/partials/class-t0mmic-reservations-public.php:101
+#: public/partials/class-t0mmic-reservations-public.php:52
 msgid "Verify by phone!!!"
 msgstr "Ověřte telefonem!!!"
 
-#: public/partials/class-t0mmic-reservations-public.php:103
+#: public/partials/class-t0mmic-reservations-public.php:54
 msgid "Sorry, you have to reserved a place by phone."
-msgstr "Je nám to líto, ale musíte si rezervovat místo telefonicky."
+msgstr "Je nám líto, ale musíte provést rezervaci telefonicky."
 
-#: public/partials/class-t0mmic-reservations-public.php:124
+#: public/partials/class-t0mmic-reservations-public.php:128
 #: admin/class-t0mmic-reservations-admin.php:42
 msgid "An error occurred"
 msgstr "Vyskytla se chyba"
 
-#: public/partials/class-t0mmic-reservations-public.php:133
-msgid "An error occurred. Reservation has been saved, but email was not sent. We will contact you by phone."
-msgstr "Vyskytla se chyba. Rezervace byla uložena, ale e-mail nebyl odeslán. Budeme vás kontaktovat telefonicky."
+#: public/partials/class-t0mmic-reservations-public.php:137
+msgid "An error occurred. Reservation has been saved, but email was not sent."
+msgstr "Vyskytla se chyba. Rezervace byla uložena, ale e-mail nebyl odeslán."
 
-#: public/partials/class-t0mmic-reservations-public.php:138
-msgid "Someone was faster. Places are no longer available."
-msgstr "Někdo byl rychlejší. Místa již nejsou k dispozici."
+#: public/partials/class-t0mmic-reservations-public.php:142
+msgid "We're sorry, but someone made a booking faster."
+msgstr "Litujeme, ale někdo provedl rezervaci rychleji."
 
-#: public/partials/class-t0mmic-reservations-public.php:224
+#: public/partials/class-t0mmic-reservations-public.php:227
 msgid "Closed"
 msgstr "Zavřeno"
 
-#: public/partials/class-t0mmic-reservations-public.php:225
+#: public/partials/class-t0mmic-reservations-public.php:228
 msgid "Fail. Please try again later."
 msgstr "Selhání. Zkuste to prosím později."
 
-#: public/partials/class-t0mmic-reservations-public.php:226
+#: public/partials/class-t0mmic-reservations-public.php:229
 msgid "Selected time is not empty. See graph. Green shows free times under the same conditions."
-msgstr "Ve vybraný čas není volno. Viz graf. Zeleně zobrazeny volné časy za stejných podmínek."
+msgstr "Vybraný čas je již obsazen. Viz graf. Veberte z volných časů."
 
-#: public/partials/class-t0mmic-reservations-public.php:252
+#: public/partials/class-t0mmic-reservations-public.php:255
 msgid "TRP Reservation"
 msgstr "TRP Reservation"
 
-#: public/partials/class-t0mmic-reservations-public.php:253
+#: public/partials/class-t0mmic-reservations-public.php:256
 msgid "Reservation form."
 msgstr "Rezervační formulář."
 
-#: public/partials/class-t0mmic-reservations-public.php:278
+#: public/partials/class-t0mmic-reservations-public.php:281
 msgid "New title"
 msgstr "Nový název"
 
-#: public/partials/class-t0mmic-reservations-public.php:282
+#: public/partials/class-t0mmic-reservations-public.php:285
 msgid "Title:"
 msgstr "Název:"
 
@@ -440,11 +440,11 @@ msgstr "Nadpis stránky"
 #: admin/partials/t0mmic-reservations-admin-display.php:253
 #: admin/partials/t0mmic-reservations-admin-display.php:254
 msgid "Theme for datepicker"
-msgstr "Téma pro kalendář"
+msgstr "Barevné téma kalendáře"
 
 #: admin/partials/t0mmic-reservations-admin-display.php:282
 msgid "Front end form color"
-msgstr "Barevné schéma rezervačního formuláře"
+msgstr "Barva rezervačního formuláře"
 
 #: admin/partials/t0mmic-reservations-admin-display.php:283
 msgid "Front end color of the plugin."
@@ -460,7 +460,7 @@ msgstr "bílé"
 
 #: admin/partials/t0mmic-reservations-admin-display.php:288
 msgid "Email for sending the reservation form"
-msgstr "E-mail pro zaslání rezervačního formuláře"
+msgstr "E-mail k zasílání rezervačního formuláře"
 
 #: admin/partials/t0mmic-reservations-admin-display.php:289
 msgid "Reservation form will be sent to this email."
@@ -485,7 +485,7 @@ msgstr "Vyberte formát času"
 #: admin/partials/t0mmic-reservations-admin-display.php:304
 #: admin/partials/t0mmic-reservations-admin-display.php:305
 msgid "First day of the week."
-msgstr "První den v týdnu."
+msgstr "První den týdne."
 
 #: admin/partials/t0mmic-reservations-admin-display.php:306
 msgid "Sunday"
@@ -541,11 +541,11 @@ msgstr "4 hodiny předem"
 
 #: admin/partials/t0mmic-reservations-admin-display.php:323
 msgid "Set default 'Condition', (yes=approved, no=pending)"
-msgstr "Nastavte výchozí stav, (ano = schváleno, ne = čeká na schválení)"
+msgstr "Výchozí 'stav' rezervace, (ano = schváleno, ne = čeká na schválení)"
 
 #: admin/partials/t0mmic-reservations-admin-display.php:324
 msgid "If email is required, it should be set 'no'."
-msgstr "Pokud je požadována e-mailová adresa, mělo by být nastaveno na \"ne\"."
+msgstr "Pokud je požadována e-mailová adresa, mělo by být nastaveno na 'ne'."
 
 #: admin/partials/t0mmic-reservations-admin-display.php:325
 #: admin/partials/t0mmic-reservations-admin-display.php:332
@@ -567,19 +567,19 @@ msgstr "Musí vyplňovat e-mail do formuláře."
 
 #: admin/partials/t0mmic-reservations-admin-display.php:335
 msgid "List of comma separated closed date (e.g. the New Year)."
-msgstr "Seznam čárkou oddělených datumů kdy bude zavřeno (například na Nový rok)."
+msgstr "Seznam čárkou oddělených dnů, kdy bude zavřeno."
 
 #: admin/partials/t0mmic-reservations-admin-display.php:336
 msgid "Enter dates separated by ',' in the format 'yyyy-mm-dd' e.g. '2017-12-25, 2017-12-26'"
-msgstr "Zadejte data oddělené ',' ve formátu 'rrrr-mm-dd', např. '2017-12-25, 2017-12-26'"
+msgstr "Zadejte datumy oddělené čárkou ve formátu 'rrrr-mm-dd', např. '2017-12-25, 2017-12-26'"
 
 #: admin/partials/t0mmic-reservations-admin-display.php:338
 msgid "List of comma separated blocked email, or phone"
-msgstr "Seznam blokovaných e-mailů nebo telefonů oddělených čárkami"
+msgstr "Seznam blokovaných emailů nebo telefonů oddělených čárkou"
 
 #: admin/partials/t0mmic-reservations-admin-display.php:339
 msgid "Enter emails addresses or phones separated by ','. Reservation is after this entered in the table with a note that it needs to be verified."
-msgstr "Zadejte e-mailovou adresu nebo telefony oddělené ','. Rezervace je poté uvedena v tabulce s poznámkou, že je třeba ji ověřit."
+msgstr "Zadejte emailové adresy nebo telefony oddělené čárkou. Rezervace je poté, pokud není povoleno blokování, uvedena v tabulce s poznámkou, že je třeba ji ověřit."
 
 #: admin/partials/t0mmic-reservations-admin-display.php:341
 msgid "Enable blocking"
@@ -591,7 +591,7 @@ msgstr "Pokud je zaškrtnuto, nastaví rezervace u blokovaných e-mailů a telef
 
 #: admin/partials/t0mmic-reservations-admin-display.php:347
 msgid "Times and days when it is possible to make a reservation"
-msgstr "Časy a dny, kdy je možné provést rezervaci"
+msgstr "Kdy je možné provést rezervaci. (časy a dny)"
 
 #: admin/partials/t0mmic-reservations-admin-display.php:375
 msgid "Add new week"
@@ -632,11 +632,11 @@ msgstr "Kolik dní předem lze provést rezervaci"
 
 #: admin/partials/t0mmic-reservations-admin-display.php:427
 msgid "Minimal time for one reservation"
-msgstr "Minimální doba pro jednu rezervaci"
+msgstr "Minimální doba jedné rezervace"
 
 #: admin/partials/t0mmic-reservations-admin-display.php:428
 msgid "Maximal time for one reservation."
-msgstr "Maximální čas pro jednu rezervaci."
+msgstr "Maximální doba jedné rezervace."
 
 #: admin/partials/t0mmic-reservations-admin-display.php:429
 #: admin/partials/t0mmic-reservations-admin-display.php:430
@@ -667,11 +667,11 @@ msgstr "hodiny"
 #: admin/partials/t0mmic-reservations-admin-display.php:436
 #: admin/partials/t0mmic-reservations-admin-display.php:437
 msgid "Maximal time for one reservation"
-msgstr "Maximální čas pro jednu rezervaci"
+msgstr "Maximální doba jedné rezervace"
 
 #: admin/partials/t0mmic-reservations-admin-display.php:448
 msgid "Clock interval for reservation"
-msgstr "Interval na hodinách pro rezervaci"
+msgstr "Interval na hodinách pro rezervaci (formulář)"
 
 #: admin/partials/t0mmic-reservations-admin-display.php:449
 msgid "Choosing the interval between the times available for reservation."
@@ -776,7 +776,7 @@ msgstr "Může být použit také jako widget."
 
 #: admin/partials/t0mmic-reservations-admin-display.php:553
 msgid "If you like my work, you can support me on"
-msgstr "Pokud se vám líbí moje práce, můžete mě podpořit na"
+msgstr "Pokud se vám moje práce líbí, můžete mě podpořit na"
 
 #: admin/partials/t0mmic-reservations-admin-display.php:555
 msgid "Instruction:"
@@ -837,4 +837,3 @@ msgstr "Záložka týdne slouží k nastavení otvírací doby v různých dnech
 #: admin/partials/t0mmic-reservations-admin-display.php:572
 msgid "Bookmark texts serves to create texts for send emails. Beware, first try to send email yourself, not all html characters are supported."
 msgstr "Záložka texty slouží k vytváření textů pro odesílání e-mailů. Dejte si pozor, nejprve si zkuste odeslat email sami, nejsou podporovány všechny znaky html."
-

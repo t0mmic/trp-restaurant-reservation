@@ -98,52 +98,52 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-#: public/partials/class-t0mmic-reservations-public.php:101
+#: public/partials/class-t0mmic-reservations-public.php:52
 msgid "Verify by phone!!!"
 msgstr ""
 
-#: public/partials/class-t0mmic-reservations-public.php:103
+#: public/partials/class-t0mmic-reservations-public.php:54
 msgid "Sorry, you have to reserved a place by phone."
 msgstr ""
 
-#: public/partials/class-t0mmic-reservations-public.php:124
+#: public/partials/class-t0mmic-reservations-public.php:128
 #: admin/class-t0mmic-reservations-admin.php:42
 msgid "An error occurred"
 msgstr ""
 
-#: public/partials/class-t0mmic-reservations-public.php:133
+#: public/partials/class-t0mmic-reservations-public.php:137
 msgid "An error occurred. Reservation has been saved, but email was not sent. We will contact you by phone."
 msgstr ""
 
-#: public/partials/class-t0mmic-reservations-public.php:138
+#: public/partials/class-t0mmic-reservations-public.php:142
 msgid "Someone was faster. Places are no longer available."
 msgstr ""
 
-#: public/partials/class-t0mmic-reservations-public.php:224
+#: public/partials/class-t0mmic-reservations-public.php:227
 msgid "Closed"
 msgstr ""
 
-#: public/partials/class-t0mmic-reservations-public.php:225
+#: public/partials/class-t0mmic-reservations-public.php:228
 msgid "Fail. Please try again later."
 msgstr ""
 
-#: public/partials/class-t0mmic-reservations-public.php:226
+#: public/partials/class-t0mmic-reservations-public.php:229
 msgid "Selected time is not empty. See graph. Green shows free times under the same conditions."
 msgstr ""
 
-#: public/partials/class-t0mmic-reservations-public.php:252
+#: public/partials/class-t0mmic-reservations-public.php:255
 msgid "TRP Reservation"
 msgstr ""
 
-#: public/partials/class-t0mmic-reservations-public.php:253
+#: public/partials/class-t0mmic-reservations-public.php:256
 msgid "Reservation form."
 msgstr ""
 
-#: public/partials/class-t0mmic-reservations-public.php:278
+#: public/partials/class-t0mmic-reservations-public.php:281
 msgid "New title"
 msgstr ""
 
-#: public/partials/class-t0mmic-reservations-public.php:282
+#: public/partials/class-t0mmic-reservations-public.php:285
 msgid "Title:"
 msgstr ""
 
@@ -359,6 +359,8 @@ msgid "Bulk Actions"
 msgstr ""
 
 #: admin/partials/t0mmic-reservations-admin-display.php:114
+#: admin/partials/t0mmic-reservations-admin-display.php:168
+#: admin/partials/t0mmic-reservations-admin-display.php:216
 msgid "Disapproved"
 msgstr ""
 
@@ -412,11 +414,6 @@ msgstr ""
 #: admin/partials/t0mmic-reservations-admin-display.php:165
 #: admin/partials/t0mmic-reservations-admin-display.php:213
 msgid "Condition"
-msgstr ""
-
-#: admin/partials/t0mmic-reservations-admin-display.php:168
-#: admin/partials/t0mmic-reservations-admin-display.php:216
-msgid "Disapproved"
 msgstr ""
 
 #: admin/partials/t0mmic-reservations-admin-display.php:198
