@@ -391,7 +391,7 @@ class T0mmic_Reservations_Admin {
 	 */
 	public function enqueue_styles() {
 		wp_enqueue_style( $this->plugin_name, TRP_URL . 'admin/css/t0mmic-reservations-admin.css', array(), $this->version, 'all' );
-    add_action( 'wp_enqueue_style', 't0mmic_reservation' );
+
 	}
 
 	/**
@@ -403,7 +403,7 @@ class T0mmic_Reservations_Admin {
 		wp_enqueue_script('jquery-ui-tabs');
 		wp_enqueue_script('jquery-ui-widget');
 		wp_enqueue_script( $this->plugin_name, TRP_URL . 'admin/js/t0mmic-reservations-admin.js', array( 'jquery','json2' ), $this->version, false );
-		add_action( 'wp_enqueue_scripts', 't0mmic_reservation' );
+
 
 		$data = get_option('t0mmic_settings');
 		$phpSettings = array(
