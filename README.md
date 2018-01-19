@@ -5,6 +5,8 @@ Tested on WordPress 4.9.1 and above
 
 Description:
 
+!!! It's still a beta version. !!!
+
 Allows online restaurant reservation, send e-mails or search free seats and automatically booked.
 
 When fully occupied, it offers alternative reservation options. 
